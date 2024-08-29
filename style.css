@@ -212,11 +212,6 @@ section {
 }
 
 @media (max-width: 1020px) {
-    .social i {
-        height: 40px;
-        width: 40px;
-        font-size: 17px;
-    }
 
     .navbar a {
         margin: 0 15px;
@@ -230,15 +225,6 @@ section {
 }
 
 @media (max-width: 950px) {
-    .social {
-        position: fixed;
-        bottom: 15px;
-        left: 15px;
-        z-index: 100;
-        display: flex;
-        gap: 10px;
-    }
-
     section {
         padding: 70px 4%;
     }

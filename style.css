@@ -200,7 +200,7 @@ section{
 }
 
 @media (max-width: 950px){
-    .share {
+    .social i{
         position: static;
         margin-top: 20px; 
         text-align: center; 

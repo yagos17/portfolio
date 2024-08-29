@@ -200,14 +200,6 @@ section{
 }
 
 @media (max-width: 950px){
-    .social {
-        position: fixed;      
-        bottom: 15px;          
-        left: 15px;           
-        z-index: 100;       
-        display: flex;        
-        gap: 10px;             
-    }
     section{
         padding: 70px 4%;
     }
@@ -235,14 +227,6 @@ section{
 }
 
 @media (max-width: 850px){
-    .social {
-        position: fixed;
-        bottom: 15px;
-        left: 15px;
-        z-index: 100;
-        display: flex;
-        gap: 10px;
-    }
     .navbar{
         position: absolute;
         width: 100%;
@@ -271,14 +255,6 @@ section{
 }
 
 @media (max-width: 500px){
-    .social {
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
-        z-index: 100;
-        display: flex;
-        gap: 8px;
-    }
     :root{
         --big-font: 4rem;
         --pt-font: 15px;

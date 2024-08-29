@@ -202,6 +202,8 @@ section{
 @media (max-width: 950px){
     .share {
         position: static;
+        margin-top: 20px; 
+        text-align: center; 
     }
     section{
         padding: 70px 4%;

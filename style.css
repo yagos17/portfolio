@@ -1,3 +1,4 @@
+/* Reinicia as configurações de todos os elementos */
 * {
     padding: 0;
     margin: 0;
@@ -7,22 +8,24 @@
     text-decoration: none;
 }
 
+/* Definições de variáveis para cores e tamanhos */
 :root {
     --bg-color: #ffffff;
     --text-color: #1e1c1a;
     --main-color: #f94b04;
     --second-color: #e2b97f;
-
     --big-font: 7rem;
     --p-font: 1.1rem;
 }
 
+/* Estilo do corpo da página */
 body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
 }
 
+/* Estilo do cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -34,7 +37,7 @@ header {
     justify-content: space-between;
     padding: 32px 15%;
     background: transparent;
-    transition: all ease 0.45s;
+    transition: all ease .45s;
 }
 
 .logo {
@@ -47,6 +50,7 @@ header {
     color: var(--main-color);
 }
 
+/* Estilo da barra de navegação */
 .navbar {
     display: flex;
 }
@@ -56,7 +60,7 @@ header {
     font-weight: 500;
     color: var(--text-color);
     margin: 0 25px;
-    transition: all ease 0.50s;
+    transition: all ease .50s;
 }
 
 .navbar a:hover {
@@ -81,6 +85,7 @@ header {
     z-index: 6;
 }
 
+/* Estilo das seções */
 section {
     padding: 0 15%;
 }
@@ -96,15 +101,13 @@ section {
 }
 
 .home-img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    margin: auto;
+    width: 1900px;
+    height: 1900px;
 }
 
 .home-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -127,6 +130,7 @@ section {
     margin-bottom: 30px;
 }
 
+/* Estilo dos botões */
 .btn {
     display: inline-block;
     padding: 14px 34px;
@@ -157,16 +161,18 @@ section {
     border: 2px solid var(--text-color);
 }
 
+/* Estilo dos botões de mídia social */
 .share {
-    position: absolute;
-    bottom: 3rem;
-    left: 15%;
+    position: fixed; /* Alterado para fixed */
+    bottom: 15px;    
+    left: 15px;      
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px;       
+    z-index: 1000;  /* Garantir que está acima de outros elementos */
 }
 
-.social i {
+.social a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -178,10 +184,9 @@ section {
     font-size: 20px;
     margin: 0 7px;
     transition: all 0.6s ease-in-out;
-    font-weight: 1000;
 }
 
-.social i:hover {
+.social a:hover {
     transform: translateY(-10px);
     background: transparent;
     color: var(--main-color);
@@ -191,80 +196,65 @@ section {
 @media (max-width: 1370px) {
     header {
         padding: 15px 4%;
-        transition: 0.2s;
+        transition: .2s;
     }
-
     section {
         padding: 0 4%;
-        transition: 0.2s;
+        transition: .2s;
     }
-
     .share {
         left: 4%;
-        transition: 0.2s;
+        transition: .2s;
     }
-
     :root {
         --big-font: 5.5rem;
         --p-font: 1rem;
-        transition: 0.2s;
+        transition: .2s;
     }
 }
 
 @media (max-width: 1020px) {
-    .social i {
+    .social a {
         height: 40px;
         width: 40px;
         font-size: 17px;
     }
-
     .navbar a {
         margin: 0 15px;
     }
-
     :root {
         --big-font: 5rem;
         --p-font: 1rem;
-        transition: 0.2s;
+        transition: .2s;
     }
 }
 
 @media (max-width: 950px) {
-    .social {
-        position: fixed;
+    .share {
         bottom: 15px;
         left: 15px;
-        z-index: 100;
-        display: flex;
-        gap: 10px;
     }
-
     section {
         padding: 70px 4%;
     }
-
     header {
         padding: 11px 4%;
     }
-
     .home {
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
-
     .home-text {
         order: 2;
     }
-
     .home-img {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
         margin: auto;
+        height: auto;
+        width: auto;
     }
-
     .home-img img {
+        max-width: 450px;
         width: 100%;
         height: auto;
     }
@@ -285,15 +275,14 @@ section {
         background: var(--text-color);
         transition: all 0.4s ease-in-out;
     }
-
     .navbar a {
         display: block;
         color: var(--bg-color);
-        margin: 0 0 40px;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
         font-size: 2rem;
         font-weight: 400;
     }
-
     .navbar.open {
         left: 0;
     }
@@ -302,19 +291,15 @@ section {
 @media (max-width: 500px) {
     :root {
         --big-font: 4rem;
-        --pt-font: 15px;
-        transition: 0.2s;
+        --p-font: 15px; /* Corrigido pt-font para p-font */
+        transition: .2s;
     }
-
     .btn {
         padding: 9px 28px;
     }
-
-    .home-img img {
-        max-width: 300px;
-    }
 }
 
+/* Animação da imagem */
 .home-img img {
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
@@ -324,11 +309,9 @@ section {
     0% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-22px);
     }
-
     100% {
         transform: translateY(0);
     }

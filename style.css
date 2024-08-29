@@ -200,6 +200,9 @@ section{
 }
 
 @media (max-width: 950px){
+    .share {
+        display: none;
+    }
     section{
         padding: 70px 4%;
     }
@@ -227,9 +230,6 @@ section{
 }
 
 @media (max-width: 850px){
-    .share {
-        display: none;
-    }
     .navbar{
         position: absolute;
         width: 100%;

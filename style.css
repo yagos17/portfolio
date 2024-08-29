@@ -184,11 +184,6 @@ section{
 }
 
 @media (max-width: 1020px){
-    .social i{
-        height: 40px;
-        width: 40px;
-        font-size: 17px;
-    }
     .navbar a{
         margin: 0 15px;
     }

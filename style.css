@@ -194,35 +194,36 @@ section{
     }
 }
 
-@media (max-width: 950px){
-    section{
-        padding: 70px 4%;
-    }
-    header{
-        padding: 11px 4%;
-    }
-    .home{
+@media (max-width: 950px) {
+    .home {
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .home-text{
+    .home-text {
         order: 2;
     }
-    .home-img{
+    .home-img {
         margin: auto;
         height: auto;
         width: auto;
     }
-    .home-img img{
+    .home-img img {
         max-width: 450px;
         width: 100%;
         height: auto;
     }
+    .social {
+        position: relative; /* Modificado de absolute para relative */
+        bottom: initial;    /* Remove a posição fixa */
+        left: 0;
+        margin-top: 20px;   /* Adiciona espaço superior para afastar dos botões */
+        z-index: 0;         /* Define z-index para evitar sobreposição */
+    }
 }
 
-@media (max-width: 850px){
-    .navbar{
+@media (max-width: 850px) {
+    .navbar {
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -236,7 +237,7 @@ section{
         background: var(--text-color);
         transition: all 0.4s ease-in-out;
     }
-    .navbar a{
+    .navbar a {
         display: block;
         color: var(--bg-color);
         padding: 0;
@@ -244,8 +245,15 @@ section{
         font-size: 2rem;
         font-weight: 400;
     }
-    .navbar.open{
+    .navbar.open {
         left: 0;
+    }
+    .social {
+        position: relative; /* Mantém o position relative */
+        margin-top: 20px;   /* Garante espaçamento adequado */
+        left: 0;
+        bottom: 0;
+        z-index: 0;
     }
 }
 

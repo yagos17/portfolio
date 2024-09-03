@@ -27,6 +27,6 @@ sr.reveal('.main-btn', { delay: 860, origin: 'left' });
 sr.reveal('.share', { delay: 950, origin: 'bottom' });
 sr.reveal('.home-img', { delay: 1000, origin: 'right' });
 
-sr.reveal('.about-text h1', { delay: 680, origin: 'left' });
-sr.reveal('.about-text p', { delay: 750, origin: 'right' });
-sr.reveal('.about-img', { delay: 1000, origin: 'right' });
+sr.reveal('.about-text h1', { delay: 680, origin: 'right' });
+sr.reveal('.about-text p', { delay: 750, origin: 'left' });
+sr.reveal('.about-img', { delay: 1000, origin: 'left' });

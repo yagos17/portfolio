@@ -225,6 +225,10 @@ section {
 }
 
 @media (max-width: 950px) {
+    .share {
+        display: none;
+    }
+
     section {
         padding: 70px 4%;
     }

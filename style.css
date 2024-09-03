@@ -212,6 +212,9 @@ section {
 }
 
 @media (max-width: 1020px) {
+    .share {
+        display: none;
+    }
 
     .navbar a {
         margin: 0 15px;
@@ -225,10 +228,6 @@ section {
 }
 
 @media (max-width: 950px) {
-    .share {
-        display: none;
-    }
-
     section {
         padding: 70px 4%;
     }

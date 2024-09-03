@@ -199,11 +199,6 @@ section {
         transition: 0.2s;
     }
 
-    .share {
-        left: 4%;
-        transition: 0.2s;
-    }
-
     :root {
         --big-font: 5.5rem;
         --p-font: 1rem;
@@ -212,9 +207,6 @@ section {
 }
 
 @media (max-width: 1020px) {
-    .share {
-        display: none;
-    }
 
     .navbar a {
         margin: 0 15px;
@@ -228,6 +220,10 @@ section {
 }
 
 @media (max-width: 950px) {
+    .share {
+        display: none;
+    }
+
     section {
         padding: 70px 4%;
     }

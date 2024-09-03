@@ -256,6 +256,10 @@ section {
 }
 
 @media (max-width: 850px) {
+    .share {
+        display: none;
+    }
+
     .navbar {
         position: absolute;
         width: 100%;
@@ -285,6 +289,10 @@ section {
 }
 
 @media (max-width: 500px) {
+    .share {
+        display: none;
+    }
+
     :root {
         --big-font: 4rem;
         --pt-font: 15px;

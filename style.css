@@ -288,6 +288,28 @@ section {
         width: 100%;
         height: auto;
     }
+
+    .about {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 850px) {
@@ -339,6 +361,10 @@ section {
     }
 
     .home-img img {
+        max-width: 300px;
+    }
+
+    .about-img img {
         max-width: 300px;
     }
 }

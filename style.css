@@ -306,9 +306,75 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
+.contact h1 {
+    font-size: var(--big-font);
+    margin-bottom: 20px;
+}
+
+.contact span {
+    color: var(--main-color);
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    margin: 1.5rem;
+    resize: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--main-color);
+    padding: 50px 0;
+}
+
+.footer .social {
+    text-align: center;
+}
+
+.footer ul {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--text-color);
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
 
 /* Media Queries */
 @media (max-width: 1370px) {

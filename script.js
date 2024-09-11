@@ -43,8 +43,3 @@ sr.reveal('.contact h1', { delay: 200, origin: 'left' });
 sr.reveal('.contact span', { delay: 600, origin: 'right' });
 sr.reveal('.contact form', { delay: 600, origin: 'top' });
 sr.reveal('.btn-submit', { delay: 680, origin: 'left' });
-
-/* Footer */
-sr.reveal('.footer .social-footer', { delay: 200, origin: 'left' });
-sr.reveal('.footer ul', { delay: 600, origin: 'right' });
-sr.reveal('.footer .copyright', { delay: 680, origin: 'left' });

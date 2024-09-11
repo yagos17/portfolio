@@ -29,4 +29,11 @@ sr.reveal('.home-img', { delay: 1000, origin: 'right' });
 /* About Section */
 sr.reveal('.about-text h1', { delay: 680, origin: 'left' });
 sr.reveal('.about-text p', { delay: 750, origin: 'right' });
-sr.reveal('.about-img', { delay: 1000, origin: 'right' });
+sr.reveal('.about-img', { delay: 1000, origin: 'right' });  
+
+/* Skills Section */
+sr.reveal('.skills-text h1', { delay: 680, origin: 'left' });
+sr.reveal('.skills-icons', { delay: 750, origin: 'right' });
+sr.reveal('.skill-item', { delay: 860, origin: 'left' });
+sr.reveal('.skill-item i', { delay: 950, origin: 'bottom' });
+sr.reveal('.skill-item span', { delay: 1000, origin: 'right' });

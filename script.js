@@ -37,3 +37,14 @@ sr.reveal('.skills-icons', { delay: 750, origin: 'right' });
 sr.reveal('.skill-item', { delay: 860, origin: 'left' });
 sr.reveal('.skill-item i', { delay: 950, origin: 'bottom' });
 sr.reveal('.skill-item span', { delay: 1000, origin: 'right' });
+
+/* Contact Section */
+sr.reveal('.contact h1', { delay: 200, origin: 'left' });
+sr.reveal('.contact span', { delay: 600, origin: 'right' });
+sr.reveal('.contact form', { delay: 600, origin: 'top' });
+sr.reveal('.btn-submit', { delay: 680, origin: 'left' });
+
+/* Footer */
+sr.reveal('.footer .social-footer', { delay: 200, origin: 'left' });
+sr.reveal('.footer ul', { delay: 600, origin: 'right' });
+sr.reveal('.footer .copyright', { delay: 680, origin: 'left' });
